@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Blueman App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad</h1>
+    <p>Última actualización: [Fecha]</p>
+
+    <h2>Recopilación y Uso de Información</h2>
+    <p>Blueman respeta tu privacidad y se compromete a proteger cualquier información personal que puedas proporcionarnos. No recopilamos ni compartimos información personal con terceros sin tu consentimiento. Sin embargo, es posible que recopilemos cierta información para mejorar tu experiencia con la aplicación:</p>
+    <ul>
+        <li>Información del dispositivo, como modelo, sistema operativo y versión.</li>
+        <li>Información de uso, como las acciones que realizas dentro de la aplicación.</li>
+    </ul>
+    
+    <h2>Cookies y Tecnologías Similares</h2>
+    <p>Blueman no utiliza cookies ni tecnologías similares para rastrear la actividad del usuario.</p>
+
+    <h2>Seguridad</h2>
+    <p>Valoramos la seguridad de tus datos personales y tomamos medidas para protegerlos. Sin embargo, debes tener en cuenta que ninguna transmisión por Internet o método de almacenamiento electrónico es completamente seguro.</p>
+
+    <h2>Cambios en la Política de Privacidad</h2>
+    <p>Podemos actualizar nuestra Política de Privacidad ocasionalmente. Te recomendamos revisar esta página periódicamente para conocer cualquier cambio. La fecha de la última actualización se indicará en la parte superior de la página.</p>
+
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta sobre nuestra Política de Privacidad, no dudes en contactarnos a través de [correo electrónico de contacto].</p>
+    
+    <p>Esta Política de Privacidad se aplica solo a la información recopilada por Blueman y no a terceros ni a sitios web o servicios enlazados a través de la aplicación.</p>
+</body>
+</html>
