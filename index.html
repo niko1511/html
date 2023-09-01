@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -67,19 +68,44 @@
                 margin-bottom: 20px;
             }
         }
+
+        /* Estilo para el div que contiene los permisos */
+        .permisos-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+
+        /* Estilo para los iconos de permisos */
+        .permisos-icon {
+            font-size: 48px;
+            color: #007BFF;
+        }
+
+        /* Estilo para el detalle de los permisos */
+        .permisos-detail {
+            font-size: 16px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Blueman: Tu Puerta al Asombro Tecnológico</h1>
-    </header>
+<header>
+    <h1>Blueman: Tu Puerta al Asombro Tecnológico</h1>
+</header>
 
-    <div class="container">
-        <h2>Explora el Mundo de Blueman</h2>
-        <p>¡Bienvenido a Blueman, la aplicación que te llevará a un viaje tecnológico fascinante! Diseñada con pasión y codificada en Kotlin, Blueman es el escaparate de innovación y seguridad.</p>
+<div class="container">
+    <h2>Explora el Mundo de Blueman</h2>
+    <p>¡Bienvenido a Blueman, la aplicación que te llevará a un viaje tecnológico fascinante! Diseñada con pasión y codificada en Kotlin, Blueman es el escaparate de innovación y seguridad.</p>
 
-        <!-- Div con los permisos -->
-        <div class="permisos-container">
+    <!-- Div con los permisos -->
+    <div class="permisos-container">
+        <!-- Permiso ACCESS_NETWORK_STATE con su icono y descripción -->
+        <!-- Div que contiene los permisos -->
             <!-- Permiso ACCESS_NETWORK_STATE con su icono y descripción -->
             <div>
                 <span class="permisos-icon">🌐</span>
@@ -87,109 +113,99 @@
                     <strong>android.permission.ACCESS_NETWORK_STATE:</strong> Permite a la aplicación verificar el estado de la red, como si está conectada a Internet o si está en una red móvil o Wi-Fi.
                 </div>
             </div>
-             <!-- Div que contiene los permisos -->
-    <div class="permisos-container">
-        <!-- Permiso ACCESS_NETWORK_STATE con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">🌐</span>
-            <div class="permisos-detail">
-                <strong>android.permission.ACCESS_NETWORK_STATE:</strong> Permite a la aplicación verificar el estado de la red, como si está conectada a Internet o si está en una red móvil o Wi-Fi.
+
+            <!-- Permiso FOREGROUND_SERVICE con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">🔵</span>
+                <div class="permisos-detail">
+                    <strong>android.permission.FOREGROUND_SERVICE:</strong> Permite a la aplicación ejecutar servicios en primer plano, lo que significa que puede realizar tareas visibles para el usuario mientras está en segundo plano.
+                </div>
+            </div>
+
+            <!-- Permiso GET_ACCOUNTS con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">👤</span>
+                <div class="permisos-detail">
+                    <strong>android.permission.GET_ACCOUNTS:</strong> Permite a la aplicación acceder a la lista de cuentas configuradas en el dispositivo, útil para autenticación de usuario.
+                </div>
+            </div>
+
+            <!-- Permiso INTERNET con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">🌐</span>
+                <div class="permisos-detail">
+                    <strong>android.permission.INTERNET:</strong> Permite a la aplicación acceder a Internet y realizar solicitudes de red.
+                </div>
+            </div>
+
+            <!-- Permiso USE_CREDENTIALS con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">🔑</span>
+                <div class="permisos-detail">
+                    <strong>android.permission.USE_CREDENTIALS:</strong> Permite a la aplicación utilizar las credenciales de autenticación almacenadas en el dispositivo para autenticar al usuario en servicios externos.
+                </div>
+            </div>
+
+            <!-- Permiso WAKE_LOCK con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">⏰</span>
+                <div class="permisos-detail">
+                    <strong>android.permission.WAKE_LOCK:</strong> Permite a la aplicación despertar el dispositivo cuando está en modo de suspensión para mantener ciertas funciones activas en segundo plano.
+                </div>
+            </div>
+
+            <!-- Permiso BIND_GET_INSTALL_REFERRER_SERVICE con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">🔗</span>
+                <div class="permisos-detail">
+                    <strong>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE:</strong> Permiso relacionado con Google Play Store para rastrear referencias de instalación al descargar aplicaciones desde la tienda.
+                </div>
+            </div>
+
+            <!-- Permiso AD_ID con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">📣</span>
+                <div class="permisos-detail">
+                    <strong>com.google.android.gms.permission.AD_ID:</strong> Permite a la aplicación acceder al Identificador de publicidad de Google (GAID) para rastrear publicidad y comportamiento del usuario.
+                </div>
+            </div>
+
+            <!-- Permiso DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION con su icono y descripción -->
+            <div>
+                <span class="permisos-icon">❓</span>
+                <div class="permisos-detail">
+                    <strong>com.nikosoft.nksf.blueman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION:</strong> Este permiso personalizado es específico de la aplicación "BlueMan" desarrollada por Nikosoft y su funcionalidad exacta depende del contexto de la aplicación.
+                </div>
             </div>
         </div>
 
-        <!-- Permiso FOREGROUND_SERVICE con su icono y descripción -->
+    <div class="feature">
+        <img src="icono_habilidades.png" alt="Habilidades Tecnológicas">
         <div>
-            <span class="permisos-icon">🔵</span>
-            <div class="permisos-detail">
-                <strong>android.permission.FOREGROUND_SERVICE:</strong> Permite a la aplicación ejecutar servicios en primer plano, lo que significa que puede realizar tareas visibles para el usuario mientras está en segundo plano.
-            </div>
-        </div>
-
-        <!-- Permiso GET_ACCOUNTS con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">👤</span>
-            <div class="permisos-detail">
-                <strong>android.permission.GET_ACCOUNTS:</strong> Permite a la aplicación acceder a la lista de cuentas configuradas en el dispositivo, útil para autenticación de usuario.
-            </div>
-        </div>
-
-        <!-- Permiso INTERNET con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">🌐</span>
-            <div class="permisos-detail">
-                <strong>android.permission.INTERNET:</strong> Permite a la aplicación acceder a Internet y realizar solicitudes de red.
-            </div>
-        </div>
-
-        <!-- Permiso USE_CREDENTIALS con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">🔑</span>
-            <div class="permisos-detail">
-                <strong>android.permission.USE_CREDENTIALS:</strong> Permite a la aplicación utilizar las credenciales de autenticación almacenadas en el dispositivo para autenticar al usuario en servicios externos.
-            </div>
-        </div>
-
-        <!-- Permiso WAKE_LOCK con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">⏰</span>
-            <div class="permisos-detail">
-                <strong>android.permission.WAKE_LOCK:</strong> Permite a la aplicación despertar el dispositivo cuando está en modo de suspensión para mantener ciertas funciones activas en segundo plano.
-            </div>
-        </div>
-
-        <!-- Permiso BIND_GET_INSTALL_REFERRER_SERVICE con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">🔗</span>
-            <div class="permisos-detail">
-                <strong>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE:</strong> Permiso relacionado con Google Play Store para rastrear referencias de instalación al descargar aplicaciones desde la tienda.
-            </div>
-        </div>
-
-        <!-- Permiso AD_ID con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">📣</span>
-            <div class="permisos-detail">
-                <strong>com.google.android.gms.permission.AD_ID:</strong> Permite a la aplicación acceder al Identificador de publicidad de Google (GAID) para rastrear publicidad y comportamiento del usuario.
-            </div>
-        </div>
-
-        <!-- Permiso DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION con su icono y descripción -->
-        <div>
-            <span class="permisos-icon">❓</span>
-            <div class="permisos-detail">
-                <strong>com.nikosoft.nksf.blueman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION:</strong> Este permiso personalizado es específico de la aplicación "BlueMan" desarrollada por Nikosoft y su funcionalidad exacta depende del contexto de la aplicación.
-            </div>
+            <h3>Descubre Habilidades Únicas</h3>
+            <p>Blueman es un reflejo de las destrezas del desarrollador. Desde la interfaz pulida hasta la programación elegante, ¡cada detalle te sorprenderá!</p>
         </div>
     </div>
-        </div>
 
-        <div class="feature">
-            <img src="icono_habilidades.png" alt="Habilidades Tecnológicas">
-            <div>
-                <h3>Descubre Habilidades Únicas</h3>
-                <p>Blueman es un reflejo de las destrezas del desarrollador. Desde la interfaz pulida hasta la programación elegante, ¡cada detalle te sorprenderá!</p>
-            </div>
+    <div class="feature">
+        <img src="icono_juego.png" alt="Juego de la Vida">
+        <div>
+            <h3>Juego de la Vida</h3>
+            <p>Sumérgete en el fascinante "Juego de la Vida". Explora la complejidad emergente mientras disfrutas de un entretenimiento único.</p>
         </div>
-
-        <div class="feature">
-            <img src="icono_juego.png" alt="Juego de la Vida">
-            <div>
-                <h3>Juego de la Vida</h3>
-                <p>Sumérgete en el fascinante "Juego de la Vida". Explora la complejidad emergente mientras disfrutas de un entretenimiento único.</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <img src="icono_seguridad.png" alt="Seguridad">
-            <div>
-                <h3>Seguridad Destacada</h3>
-                <p>Blueman se enorgullece de su seguridad. Tu privacidad es primordial, y por eso nos esforzamos por garantizar la protección de tus datos.</p>
-            </div>
-        </div>
-
-        <h2>Descarga Blueman y Comienza el Asombro</h2>
-        <p>Descarga Blueman hoy mismo y sumérgete en un mundo de innovación, seguridad y entretenimiento cautivador. ¡Tu viaje al asombro tecnológico está a solo un clic de distancia!</p>
-        <a href="enlace_de_descarga" target="_blank"><button>Descargar Ahora</button></a>
     </div>
+
+    <div class="feature">
+        <img src="icono_seguridad.png" alt="Seguridad">
+        <div>
+            <h3>Seguridad Destacada</h3>
+            <p>Blueman se enorgullece de su seguridad. Tu privacidad es primordial, y por eso nos esforzamos por garantizar la protección de tus datos.</p>
+        </div>
+    </div>
+
+    <h2>Descarga Blueman y Comienza el Asombro</h2>
+    <p>Descarga Blueman hoy mismo y sumérgete en un mundo de innovación, seguridad y entretenimiento cautivador. ¡Tu viaje al asombro tecnológico está a solo un clic de distancia!</p>
+    <a href="enlace_de_descarga" target="_blank"><button>Descargar Ahora</button></a>
+</div>
 </body>
 </html>
