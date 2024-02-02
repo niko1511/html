@@ -87,6 +87,36 @@
             text-decoration: none;
         }
 
+
+        .google-play-link {
+        display: inline-block;
+        background-color: #3c3c3c;  
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .google-play-link:hover {
+        background-color: #4c4c4c;
+    }
+
+    .google-play-link img {
+        width: 100px;
+        vertical-align: middle;
+    }
+
+    .google-play-link .download-text {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
      
     
     </style>
@@ -103,80 +133,29 @@
     <!-- Div con los permisos -->
     <div class="permisos-container">
              <!-- Div que contiene los permisos -->
-            <!-- Permiso ACCESS_NETWORK_STATE con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">🌐</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.ACCESS_NETWORK_STATE:</strong> Permite a la aplicación verificar el estado de la red, como si está conectada a Internet o si está en una red móvil o Wi-Fi.
-                </div>
-            </div>
-
-            <!-- Permiso FOREGROUND_SERVICE con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">🔵</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.FOREGROUND_SERVICE:</strong> Permite a la aplicación ejecutar servicios en primer plano, lo que significa que puede realizar tareas visibles para el usuario mientras está en segundo plano.
-                </div>
-            </div>
-
-            <!-- Permiso GET_ACCOUNTS con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">👤</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.GET_ACCOUNTS:</strong> Permite a la aplicación acceder a la lista de cuentas configuradas en el dispositivo, útil para autenticación de usuario.
-                </div>
-            </div>
-
             <!-- Permiso INTERNET con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">🌐</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.INTERNET:</strong> Permite a la aplicación acceder a Internet y realizar solicitudes de red.
-                </div>
-            </div>
+<div>
+    <span class="permisos-icon">🌐</span>
+    <div class="permisos-detail">
+        <strong>android.permission.INTERNET:</strong> Este permiso permite a la aplicación acceder a Internet. Se necesita para que la aplicación pueda conectarse a Internet y enviar/recibir datos. Tu información personal no se comparte a través de esta conexión a menos que la aplicación te la solicite explícitamente y le des tu consentimiento.
+    </div>
+</div>
 
-            <!-- Permiso USE_CREDENTIALS con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">🔑</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.USE_CREDENTIALS:</strong> Permite a la aplicación utilizar las credenciales de autenticación almacenadas en el dispositivo para autenticar al usuario en servicios externos.
-                </div>
-            </div>
+<!-- Permiso ACCESS_NETWORK_STATE con su icono y descripción -->
+<div>
+    <span class="permisos-icon">🌐</span>
+    <div class="permisos-detail">
+        <strong>android.permission.ACCESS_NETWORK_STATE:</strong> Este permiso permite a la aplicación acceder a la información sobre las conexiones de red. Esto significa que la aplicación puede ver si estás conectado a una red (ya sea Wi-Fi o datos móviles) y si hay conexión a Internet. Esto se utiliza frecuentemente para verificar si la aplicación puede conectarse a Internet y si puede sincronizarse con los servidores. No se utiliza para acceder a tus datos personales o privados.
+    </div>
+</div>
 
-            <!-- Permiso WAKE_LOCK con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">⏰</span>
-                <div class="permisos-detail">
-                    <strong>android.permission.WAKE_LOCK:</strong> Permite a la aplicación despertar el dispositivo cuando está en modo de suspensión para mantener ciertas funciones activas en segundo plano.
-                </div>
-            </div>
-
-            <!-- Permiso BIND_GET_INSTALL_REFERRER_SERVICE con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">🔗</span>
-                <div class="permisos-detail">
-                    <strong>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE:</strong> Permiso relacionado con Google Play Store para rastrear referencias de instalación al descargar aplicaciones desde la tienda.
-                </div>
-            </div>
-
-            <!-- Permiso AD_ID con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">📣</span>
-                <div class="permisos-detail">
-                    <strong>com.google.android.gms.permission.AD_ID:</strong> Permite a la aplicación acceder al Identificador de publicidad de Google (GAID) para rastrear publicidad y comportamiento del usuario.
-                </div>
-            </div>
-
-            <!-- Permiso DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION con su icono y descripción -->
-            <div>
-                <span class="permisos-icon">❓</span>
-                <div class="permisos-detail">
-                    <strong>com.nikosoft.nksf.blueman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION:</strong> Este permiso personalizado es específico de la aplicación "BlueMan" desarrollada por Nikosoft y su funcionalidad exacta depende del contexto de la aplicación.
-               <p><strong>El permiso 'DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'</strong> que se encuentra en nuestra aplicación tiene un propósito específico y no representa ningún peligro para la seguridad de tus datos o tu dispositivo. Este permiso es utilizado internamente por nuestra aplicación para gestionar ciertas funciones y características sin exponer ninguna información sensible o proporcionar acceso no autorizado a recursos del dispositivo.
-                        Queremos asegurarte que la privacidad y la seguridad de nuestros usuarios son nuestra máxima prioridad. Este permiso personalizado es necesario para el funcionamiento normal de la aplicación y se utiliza de manera responsable y cuidadosa. No recopilamos ni compartimos datos personales sin tu consentimiento y estamos comprometidos a proteger tu información en todo momento.
-                        Si tienes alguna pregunta o preocupación adicional sobre este permiso o cualquier otro aspecto de nuestra aplicación, no dudes en contactarnos. Estamos aquí para brindarte la mejor experiencia posible y garantizar tu confianza en nuestro producto.</p>
-                </div>
-            </div>
+<!-- Permiso VIBRATE con su icono y descripción -->
+<div>
+    <span class="permisos-icon">⚡</span>
+    <div class="permisos-detail">
+        <strong>android.permission.VIBRATE:</strong> Este permiso permite a la aplicación controlar la vibración del dispositivo. Se utiliza para hacer que tu dispositivo vibre cuando recibes notificaciones o durante ciertos eventos dentro de la aplicación. No se utiliza para acceder a tus datos personales o privados.
+    </div>
+</div>
         </div>
 
     <div class="feature">
@@ -205,15 +184,16 @@
 
     <h2>Descarga Blueman y Comienza el Asombro</h2>
     <p>Descarga Blueman hoy mismo y sumérgete en un mundo de innovación, seguridad y entretenimiento cautivador. ¡Tu viaje al asombro tecnológico está a solo un clic de distancia!</p>
-    <a href="https://play.google.com/store/apps/details?id=com.nikosoft.nksf.blueman" target="_blank">
-        <img src="image02.png" alt="Descargar en Google Play Store">
-        <button>Descargar Ahora</button></a>
+    <a href="https://play.google.com/store/apps/details?id=com.nikosoft.nksf.blueman" target="_blank" class="google-play-link">
+        <img src="img/google-play-badge.png" alt="Google Play Store logo">
+        <span class="download-text">Descargar Ahora</span>
+    </a>
 </div>
 </body>
        <!-- Footer de Blueman -->
     <footer>
         <p>&copy; 2023 Blueman</p>
-        <p>Contacto: info@bluemanapp.com</p>
-        <p><a href="https://niko1511.github.io/html/politica_de_privacidad.html">Política de Privacidad</a> | <a href="https://niko1511.github.io/html/politica_de_privacidad_eliminacion_de_cuenta.html">Eliminación de cuenta</a>| <a href="https://niko1511.github.io/html/termino_de_uso.html">Términos de Uso</a></p>
+        <!-- <p>Contacto: info@bluemanapp.com</p> -->
+        <!-- <p><a href="https://niko1511.github.io/html/politica_de_privacidad.html">Política de Privacidad</a> | <a href="https://niko1511.github.io/html/politica_de_privacidad_eliminacion_de_cuenta.html">Eliminación de cuenta</a>| <a href="https://niko1511.github.io/html/termino_de_uso.html">Términos de Uso</a></p> -->
     </footer>
 </html>
